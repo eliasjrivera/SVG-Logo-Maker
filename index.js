@@ -38,7 +38,7 @@ function inquirerPrompt() {
         .prompt([
             {
                 type: 'input',
-                message:'What text would you like your logo to have? Up to three characters.',
+                message: 'What text would you like your logo to have? Up to three characters.',
                 name: 'text',
                 // adding validation function to test character legnth, helped by tutor
                 validate: function (input) {
@@ -56,7 +56,7 @@ function inquirerPrompt() {
             },
             {
                 type: 'input',
-                message:'What text color would you like your logo to have? Use color name or a hexadecimal number.',
+                message: 'What text color would you like your logo to have? Use color name or a hexadecimal number.',
                 name: 'textColor',
             },
             {
@@ -71,7 +71,7 @@ function inquirerPrompt() {
             },
             {
                 type: 'input',
-                message:'What color would you like your shape to have? Use color name or a hexadecimal number.',
+                message: 'What color would you like your shape to have? Use color name or a hexadecimal number.',
                 name: 'shapeColor',
             },
 ])
