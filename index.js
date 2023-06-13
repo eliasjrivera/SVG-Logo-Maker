@@ -8,6 +8,8 @@ function writeToFile(answers) {
     const DEFAULT_FILE_NAME = 'logo.svg';
 
     let svgCanvas ='<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><g>';
+    
+    // += performs addition on two operands
     svgCanvas += `${answers.shape}`;
 
     let shapeChoice;
