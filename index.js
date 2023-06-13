@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const { Triangle, Square, Circle } = require('./lib/shapes');
 
-// svg file creation function for name, canvas, color, and text
+// svg file creation function for name of file and svg canvas: shape, shape color, text, text color
 function writeToFile(answers) {
     const DEFAULT_FILE_NAME = 'logo.svg';
 
@@ -28,7 +28,7 @@ function writeToFile(answers) {
     svgCanvas += "</g></svg>";
 
     fs.writeFile(DEFAULT_FILE_NAME, svgCanvas, (err) => {
-        err ? console.log(err) : console.log("Generated logo.svg");
+        err ? console.log(err) : console.log("Generated logo.svg!");
     });
 };
 
