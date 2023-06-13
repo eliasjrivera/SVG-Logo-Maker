@@ -1,4 +1,4 @@
-# SVG-Logo-Maker
+# Object-oriented Programming: SVG Logo Maker
 
 Name
 <br>
@@ -44,12 +44,12 @@ Project Repo/Screen Recording
 <br>
 Installation
 <br>
-The user should clone the repository from GitHub and download Node. This application also requires a file systemm jest and inquirer module.
+The user should clone the repository from GitHub and download Node. This application also requires a file system, jest, and inquirer module.
 <br>
 <br>
 Usage
 <br> 
-The application will be invoked using the following command, node index. Answer the prompts. Then professional logo.svg is generated.
+The application will be invoked using the following command, node index. Answer the prompts. Then logo.svg is generated.
 <br>
 <br>
 Support
