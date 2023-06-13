@@ -32,14 +32,14 @@ Badges
 <br>
 Visuals
 <br>
-![](./gif/challenge.gif)
+![](./gif/svglogomaker.gif)
 <br>
 <br>
 Project Repo/Screen Recording
 <br>
 [Elias Rivera GitHub Repo](https://github.com/eliasjrivera/SVG-Logo-Maker)
 <br>
-[Video from Screencastify](https://drive.google.com/file/d/1fYL1fy638frKxWa6u9lJ-Taz1r0HwZkW/view)
+[Video from Screencastify](https://drive.google.com/file/d/1SzWOa7mdgvm1F5XLxhA8sUiyfXjKO8o0/view)
 <br>
 <br>
 Installation
