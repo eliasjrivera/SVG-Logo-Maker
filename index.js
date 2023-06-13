@@ -1,9 +1,9 @@
-// packages needed for this appl;ication
+// packages/imports needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { Triangle, Square, Circle } = require('./lib/shapes');
 
-// svg file creation function
+// svg file creation function for name, canvas, color, and text
 function writeToFile(answers) {
     const DEFAULT_FILE_NAME = 'logo.svg';
 
@@ -20,13 +20,13 @@ function writeToFile(answers) {
     };
 
     shapeChoice.setColor(answers.shapeColor);
-    svgCanvas += shapeChoice.generate();
+    svgCanvas += shapeChoice.render();
 
     svgCanvas += `<text x='150' y='130' text-anchor='middle' font-size='40' fill='${answers.textColor}'>${answers.text}</text>`;
     svgCanvas += "</g></svg>";
 
     fs.writeFile(DEFAULT_FILE_NAME, svgCanvas, (err) => {
-        err ? console.log(err) : console.log("SVG Logo Generated!");
+        err ? console.log(err) : console.log("Generated logo.svg");
     });
 };
 
@@ -43,7 +43,7 @@ function inquirerPrompt() {
                 validate: function (input) {
                     // creating async hack for inquirer
                     const done = this.async();
-                    // timeoue to test character length
+                    // timeout to test character length
                     setTimeout(function() {
                         if (input.length > 3) {
                             done('Answer needs to be three characters or less')
